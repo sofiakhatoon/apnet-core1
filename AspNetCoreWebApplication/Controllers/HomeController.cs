@@ -12,8 +12,8 @@ namespace AspNetCoreWebApplication.Controllers
         public IActionResult Index()
         {
             ViewData["Message"] = "You just created a ASP.Net Core web application!";
-            string custReviewRole = string.Empty;
-            if(custReviewRole =="") return null;
+            string custReviewRole = null;
+            if(custReviewRole == null) return null;
             return View();
         }
 
