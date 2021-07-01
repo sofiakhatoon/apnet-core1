@@ -13,7 +13,7 @@ namespace AspNetCoreWebApplication.Controllers
         {
             ViewData["Message"] = "You just created a ASP.Net Core web application!";
             string custReviewRole = null;
-            if(custReviewRole == null) return 0;
+            if(custReviewRole == null) return null;
             return View();
         }
 
