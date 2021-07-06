@@ -12,7 +12,7 @@ namespace AspNetCoreWebApplication.Controllers
         public IActionResult Index()
         {
             ViewData["Message"] = "You just created a ASP.Net Core web application!";
-        Object obj1 = typeof(string);
+        Object obj1 = typeof(Type);
         Object obj2 = typeof(String);
      
            if(obj2.Equals(obj2)){ 
