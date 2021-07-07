@@ -34,7 +34,7 @@ public class MyCompositionPlugin : CompositionPlugin {
 
 			throw new Exception("Cannot compare object of type [" + obj.GetType().FullName + "] to yodaString");
 		}
-}
+    }
     public class HomeController : Controller
     {
      private static List<MyCompositionPlugin> GetList(int key){
@@ -44,16 +44,16 @@ public class MyCompositionPlugin : CompositionPlugin {
         obj1.Add(new MyCompositionPlugin());   
         obj1.Add(new MyCompositionPlugin());  
         return obj1;
-    }
+        }
         public IActionResult Index()
         {
             ViewData["Message"] = "You just created a ASP.Net Core web application!";
-        Object obj1 = typeof(Type);
-        Object obj2 = typeof(String);
-     
-           if(obj2.Equals(obj2)){ 
-            return null;
-            }
+	       List<MyCompositionPlugin> obj1 = new List<MyCompositionPlugin>();
+       		for (int i = 0; i <= 5 - 1; i++)
+                {
+			obj1 = GetList(i);
+                }
+        
            
             return View();
         }
