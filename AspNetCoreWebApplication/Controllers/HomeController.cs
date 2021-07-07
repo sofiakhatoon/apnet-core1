@@ -10,7 +10,7 @@ namespace AspNetCoreWebApplication.Controllers
 
 public struct YodaString{
     private string _value ;
-    public SodaString( string value ) 
+    public YodaString( string value ) 
 		{
             this._value = value;
 		}
