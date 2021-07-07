@@ -48,9 +48,10 @@ public class MyCompositionPlugin : CompositionPlugin {
         public IActionResult Index()
         {
             ViewData["Message"] = "You just created a ASP.Net Core web application!";
-	       List<MyCompositionPlugin> obj1 = new List<MyCompositionPlugin>();
+	       
        		for (int i = 0; i <= 5 - 1; i++)
                 {
+			List<MyCompositionPlugin> obj1 = new List<MyCompositionPlugin>();
 			obj1 = GetList(i);
                 }
         
