@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -68,7 +68,7 @@ namespace AspNetCoreWebApplication.Controllers
 
   
    	if(obj1[0].entype.Equals("F"))
-            ViewData["Message"] = "Bad code";
+            	ViewData["Message"] = "Bad code";
 	    else
 	     ViewData["Message"] = "You just created a ASP.Net Core web application!";
             return View();
